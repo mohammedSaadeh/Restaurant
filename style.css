@@ -1,0 +1,61 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    text-align: center;
+    color: red;
+}
+
+#list{
+    display: flex;
+    
+}
+
+#nav{
+    margin-left: -30px;
+}
+
+#foot{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid black;
+    margin-top: 500px;
+   
+}
+
+#a{
+    padding-top: 50px;
+    padding-left: 300px;
+}
+
+#tableF, th, td{
+    border: 1px solid black;
+}
+
+#tableMain {
+    margin-top: 100px;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+form{
+    margin-top: 50px;
+}
+nav{
+    background-color: lightgrey;
+    display: flex;
+}
+h2{
+    color: red;
+}
+#name{
+    color: blue;
+}
+#types{
+    color: blue;
+}
+#price{
+    color: blue;
+}
