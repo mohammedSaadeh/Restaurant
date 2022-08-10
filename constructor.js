@@ -28,6 +28,10 @@ function submitFun(sub) {
     saveData(menu);
 }
 
+function saveData(data) {
+  let stringObject = JSON.stringify(data);
+  localStorage.setItem("Items", stringObject);
+}
 
 // var tableEl = document.getElementById("tableMain");
 
@@ -51,8 +55,3 @@ function submitFun(sub) {
 //   tdEl4.textContent = this.price;
 //   trEl.appendChild(tdEl4);
 // }
-
-function saveData(data) {
-  let stringObject = JSON.stringify(data);
-  localStorage.setItem("Items", stringObject);
-}

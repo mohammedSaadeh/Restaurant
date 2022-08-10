@@ -1,17 +1,7 @@
 'use strict';
+
+
 var dataArr=[];
-
-
-//   let countId = 0;
-//   const menu=[];
-// function generateFood(foodName,type,price) {
-//     this.id = ++countId;
-//     this.foodName=foodName;
-//     this.type=type;
-//     this.price=price;
-//     menu.push(this);
-// }
-
 
 
 function getData() {
@@ -55,11 +45,23 @@ function render(obj) {
 }
 
 
+for (let i=0;i<dataArr.length; i++){
+  render(dataArr[i]);
+}
+
+//   let countId = 0;
+//   const menu=[];
+// function generateFood(foodName,type,price) {
+//     this.id = ++countId;
+//     this.foodName=foodName;
+//     this.type=type;
+//     this.price=price;
+//     menu.push(this);
+// }
+
+
 
 // function saveData(data) {
 //     let stringObject = JSON.stringify(data);
 //     localStorage.setItem("ITEMS", stringObject);
 //   }
-for (let i=0;i<dataArr.length; i++){
-  render(dataArr[i]);
-}
