@@ -30,7 +30,7 @@ function submitFun(sub) {
 
 function saveData(data) {
   let stringObject = JSON.stringify(data);
-  localStorage.setItem("Items", stringObject);
+  localStorage.setItem("Food", stringObject);
 }
 
 // var tableEl = document.getElementById("tableMain");

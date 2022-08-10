@@ -5,7 +5,7 @@ var dataArr=[];
 
 
 function getData() {
-  let retarveData = localStorage.getItem("Items"); 
+  let retarveData = localStorage.getItem("Food"); 
   dataArr = JSON.parse(retarveData); 
   // console.log(dataArr);
   // if (dataArr.length !== 0) {
