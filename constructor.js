@@ -1,6 +1,18 @@
 'use strict';
 
 
+
+let countId = 0;
+
+const menu=[];
+function generateFood(foodName,type,price) {
+    this.id = ++countId;
+    this.foodName=foodName;
+    this.type=type;
+    this.price=price;
+    menu.push(this);
+}
+
 let formEl=document.getElementById('form');
 formEl.addEventListener('submit',submitFun);
 
@@ -13,19 +25,9 @@ function submitFun(sub) {
     // console.log(foodName,typeOfFood,price)
     const newFood = new generateFood(foodName, typeOfFood, price);
     // newFood.render();
-    saveData(generateFood);
+    saveData(menu);
 }
 
-let countId = 0;
-
-// const menu=[];
-function generateFood(foodName,type,price) {
-    this.id = ++countId;
-    this.foodName=foodName;
-    this.type=type;
-    this.price=price;
-    // menu.push(this);
-}
 
 // var tableEl = document.getElementById("tableMain");
 
