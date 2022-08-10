@@ -63,4 +63,3 @@ function render(obj) {
 for (let i=0;i<dataArr.length; i++){
   render(dataArr[i]);
 }
-  
