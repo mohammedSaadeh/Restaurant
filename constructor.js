@@ -12,7 +12,8 @@ function submitFun(sub) {
     let price=sub.target.price.value;
     // console.log(foodName,typeOfFood,price)
     const newFood = new generateFood(foodName, typeOfFood, price);
-    newFood.render();
+    // newFood.render();
+    saveData(generateFood);
 }
 
 let countId = 0;
@@ -26,25 +27,30 @@ function generateFood(foodName,type,price) {
     // menu.push(this);
 }
 
-var tableEl = document.getElementById("tableMain");
+// var tableEl = document.getElementById("tableMain");
 
-generateFood.prototype.render = function () {
-  let trEl = document.createElement("tr");
-  tableEl.appendChild(trEl);
+// generateFood.prototype.render = function () {
+//   let trEl = document.createElement("tr");
+//   tableEl.appendChild(trEl);
 
-  let tdEl1 = document.createElement("td");
-  tdEl1.textContent = this.id;
-  trEl.appendChild(tdEl1);
+//   let tdEl1 = document.createElement("td");
+//   tdEl1.textContent = this.id;
+//   trEl.appendChild(tdEl1);
 
-  let tdEl2 = document.createElement("td");
-  tdEl2.textContent = this.foodName;
-  trEl.appendChild(tdEl2);
+//   let tdEl2 = document.createElement("td");
+//   tdEl2.textContent = this.foodName;
+//   trEl.appendChild(tdEl2);
 
-  let tdEl3 = document.createElement("td");
-  tdEl3.textContent = this.type;
-  trEl.appendChild(tdEl3);
+//   let tdEl3 = document.createElement("td");
+//   tdEl3.textContent = this.type;
+//   trEl.appendChild(tdEl3);
 
-  let tdEl4 = document.createElement("td");
-  tdEl4.textContent = this.price;
-  trEl.appendChild(tdEl4);
+//   let tdEl4 = document.createElement("td");
+//   tdEl4.textContent = this.price;
+//   trEl.appendChild(tdEl4);
+// }
+
+function saveData(data) {
+  let stringObject = JSON.stringify(data);
+  localStorage.setItem("Items", stringObject);
 }
